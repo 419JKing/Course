@@ -1,0 +1,20 @@
+//顶部及导航样式
+.topPic{
+    background: #386AE3;
+    img{
+        margin: 0 auto;
+        height: 140px;
+    }
+}
+.navbar-default{
+    background: #D3C392;
+    border: none;
+    height: 50px;
+    margin-bottom: 1px;
+    ul{
+        margin-left: 100px;
+        li{
+            font-size: 14px;
+        }
+    } 
+}

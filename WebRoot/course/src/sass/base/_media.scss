@@ -1,0 +1,9 @@
+//媒体查询,导航栏内容过多情况
+@media(max-width:997px){
+    .navbar-default .nav{
+        margin-left: 0px;
+        a{
+            padding: 15px 10px;
+        }
+    }
+}
