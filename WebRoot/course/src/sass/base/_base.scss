@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
 }
-body{
+html,body{
     background: #D8EAFB;
     font:12px/20px "微软雅黑";
+    overflow-x: hidden;
     zoom: 1;
 }
 p{

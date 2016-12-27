@@ -19,7 +19,7 @@
 //课程简介
 .course-introduce{
     margin-top: $marginTop;
-    padding: 20px 15px;
+    padding: 20px 30px;
     background: $bgcolor;
     letter-spacing: $letter-spacing;
     center{
@@ -40,6 +40,7 @@
 //课程负责人
 .course-person{
     text-align: center;
+    padding: 20px 12px;
    @extend .course-introduce;
    .icon-user{
         color:deepskyblue;
@@ -57,7 +58,7 @@
             font-size: 14px;
             display: inline-block;
             padding: 10px 0;
-            background: #FAFAFA;
+            background: #F5F0F0;
             margin-top: 4px;
             img{
                 margin: 0 auto;
@@ -104,12 +105,37 @@
             color:gold;
         } 
     }
-    ul li{
-        height: 160px;
-        width: auto;
-        img{
-            margin: 0 auto;
-        }
+    .moving{
+            overflow: hidden;
+            height: 160px;
+            margin-top: $marginTop;
+            position: relative;
+            //hover在这里不会停???
+        ul{
+            width: 295%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-animation: 30s jian infinite linear;
+            &:hover{
+                -webkit-animation-play-state: paused;
+            }
+            li{
+                height: 100%;
+                width: auto;
+                margin-left: 15px;
+                img{
+                    margin: 0 auto;
+                }
+            }
+        } 
+                
     }
+
 }
 
+@-webkit-keyframes jian{
+    0%{left: 0;}
+    100%{left: -1660px;}
+}

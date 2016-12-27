@@ -11,21 +11,23 @@
   -moz-transition: all .2s ease-in;
   -ms-transition: all .2s ease-in; }
 
-@media (max-width: 997px) {
-  .navbar-default .nav {
-    margin-left: 0px; }
-    .navbar-default .nav a {
-      padding: 15px 10px; } }
+@media (max-width: 1195px) {
+  .navbar-default .nav a {
+    padding: 15px 10px; } }
+@media (max-width: 992px) {
+  .navbar-default .nav li {
+    padding: 0; } }
 * {
   margin: 0;
   padding: 0; }
 
-body {
+html, body {
   background: #D8EAFB;
   font: 12px/20px "微软雅黑";
+  overflow-x: hidden;
   zoom: 1; }
 
-p {
+p, .footer .container a {
   line-height: 1.5em; }
 
 ul, li {
@@ -44,11 +46,37 @@ a {
   background: #D3C392;
   border: none;
   height: 50px;
-  margin-bottom: 1px; }
-  .navbar-default ul {
-    margin-left: 100px; }
-    .navbar-default ul li {
-      font-size: 14px; }
+  margin-bottom: 1px;
+  z-index: 10; }
+  .navbar-default ul li {
+    font-size: 14px;
+    padding: 0 1em; }
+
+.footer {
+  background: #CACAD4;
+  margin-top: 20px;
+  padding: 20px 0 15px 0; }
+  .footer .container p, .footer .container a {
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px; }
+  .footer .container a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold; }
+    .footer .container a .icon-user {
+      font-size: 22px;
+      margin-right: 8px;
+      color: #66ADD7; }
+    .footer .container a:hover {
+      color: #000; }
+      .footer .container a:hover .icon-user {
+        color: dodgerblue; }
+  .footer .copyright {
+    margin-top: 10px; }
+    .footer .copyright p, .footer .copyright .container a, .footer .container .copyright a {
+      text-align: center;
+      line-height: 15px; }
 
 #myCarousel .carousel-control {
   width: 40px;
@@ -66,26 +94,27 @@ a {
 
 .course-introduce, .course-person {
   margin-top: 20px;
-  padding: 20px 15px;
-  background: #fff;
+  padding: 20px 30px;
+  background: #FCFAFA;
   letter-spacing: 0.2em; }
   .course-introduce center .icon-book, .course-person center .icon-book {
     font-size: 24px;
     color: darkorange; }
-  .course-introduce p, .course-person p {
+  .course-introduce p, .course-person p, .course-introduce .footer .container a, .footer .container .course-introduce a, .course-person .footer .container a, .footer .container .course-person a {
     margin-top: 10px;
     text-align: left;
     text-indent: 2em;
     font-size: 16px; }
 
 .course-person {
-  text-align: center; }
+  text-align: center;
+  padding: 20px 12px; }
   .course-person .icon-user {
     color: deepskyblue;
     font-size: 24px; }
 
 .courseShow {
-  background: #fff;
+  background: #FCFAFA;
   margin-top: 20px;
   padding: 20px 14px; }
   .courseShow li {
@@ -94,11 +123,11 @@ a {
       font-size: 14px;
       display: inline-block;
       padding: 10px 0;
-      background: #FAFAFA;
+      background: #F5F0F0;
       margin-top: 4px; }
       .courseShow li a img {
         margin: 0 auto; }
-      .courseShow li a p {
+      .courseShow li a p, .courseShow li a .footer .container a, .footer .container .courseShow li a a {
         text-align: left;
         color: #666;
         padding: 14px 28px; }
@@ -130,14 +159,35 @@ a {
         -ms-transform: scale(1); }
 
 .results-show {
-  background: #fff;
+  background: #FCFAFA;
   margin-top: 20px;
   padding: 20px 15px; }
   .results-show center .icon-trophy {
     font-size: 24px;
     color: gold; }
-  .results-show ul li {
+  .results-show .moving {
+    overflow: hidden;
     height: 160px;
-    width: auto; }
-    .results-show ul li img {
-      margin: 0 auto; }
+    margin-top: 20px;
+    position: relative; }
+    .results-show .moving ul {
+      width: 295%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-animation: 30s jian infinite linear; }
+      .results-show .moving ul:hover {
+        -webkit-animation-play-state: paused; }
+      .results-show .moving ul li {
+        height: 100%;
+        width: auto;
+        margin-left: 15px; }
+        .results-show .moving ul li img {
+          margin: 0 auto; }
+
+@-webkit-keyframes jian {
+  0% {
+    left: 0; }
+  100% {
+    left: -1660px; } }

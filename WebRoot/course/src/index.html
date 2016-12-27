@@ -70,13 +70,15 @@
 		<!--课程简介-->
 		<!--课程负责人-->
 			<div class="course-person row">
-				<div class="col-lg-2 col-sm-3 ">
-					<img src="images/indexImg/teacher.jpg" height="180" width="130"/>
+				<div class="row">
+					<center class="col-sm-12"><span class="icon-user"></span>【课程负责人】</center>
 				</div>
-				<div class="col-lg-10 col-sm-9 course-user">
-					<center><span class="icon-user"></span>【课程负责人】</center>
+				<div class="col-lg-2 col-xs-3">
+					<img src="images/indexImg/teacher.jpg" height="140" width="100"/>
+				</div>
+				<div class="col-lg-10 col-xs-9 course-user">
 					<p>
-						该课程全面介绍了计算机单机系统的组成原理及内部工作机制,以运算器,存储器,控制器,输入和输出五大部件为主线,以存储程序思想为指导,讲授计算机系统基础知识,数据的表示和运算方法,运算器和控制器的组成及工作原理,分层次的存储系统构成及设计,指令系统的设计思想和方法,总线结构和设计,输入输出系统设计思想和方法,总线结构和设计,输入输出系统等内容...
+						该课程全面介绍了计算机单机系统的组成原理及内部工作机制,以运算器,存储器,控制器,输入和输出五大部件为主线,以存储程序思想为指导,讲授计算机系统基础知识,数据的表示和运算方法,运算器和控制器的组成及工作原理,分统等内容...
 					</p>
 				</div>
 			</div>
@@ -125,18 +127,44 @@
 		<!--课程图片展示-->
 		<div class="results-show row">
 			<center><span class="icon-trophy"></span>【课程简介】</center>
-			<div>
+			<div class="moving">
 				<ul>
 					<li class="col-sm-3"><img src="images/indexImg/gold1.jpg" class="img-responsive"/></li>
 					<li class="col-sm-3"><img src="images/indexImg/gold2.jpg" class="img-responsive"/></li>
-					<li class="col-sm-2"><img src="images/indexImg/gold8.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold3.jpg" class="img-responsive"/></li>
 					<li class="col-sm-2"><img src="images/indexImg/gold4.jpg" class="img-responsive"/></li>
 					<li class="col-sm-2"><img src="images/indexImg/gold5.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold6.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold7.jpg" class="img-responsive"/></li>
+					<li class="col-sm-3"><img src="images/indexImg/gold1.jpg" class="img-responsive"/></li>
+					<li class="col-sm-3"><img src="images/indexImg/gold2.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold3.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold4.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold5.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold6.jpg" class="img-responsive"/></li>
+					<li class="col-sm-2"><img src="images/indexImg/gold7.jpg" class="img-responsive"/></li>
 				</ul>
 			</div>
 		</div>
-		
-		
+		<!--课程图片展示-->
+	</div>	
+	
+	<!--底部-->
+	<div class="footer row">
+		<div class="container">
+			<p class="col-sm-4 col-xs-6">站点总访问量:5121</p>
+			<p class="col-sm-4 col-xs-6">当前在线人数:1</p>
+			<a href="" class="col-sm-4 col-xs-12">
+				<span class="icon-user"></span>
+				登录
+			</a>
+		</div>
+		<div class="copyright">
+			<p class="col-xs-12">copyright@广东海洋大学计算机组成原理精品课程</p>
+			<p class="col-xs-12">地址:广东湛江湖光岩东 524088</p>
+		</div>
+	</div>
+	<!--底部-->	
 		
 		
 		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
@@ -144,7 +172,23 @@
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/startMove.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$('.carousel').carousel();
+			$(function(){
+				$('.carousel').carousel();
+				 
+				//无缝滚动
+//				var $ul = $(".moving ul")
+//				var len = $ul.width();
+//				alert(len)
+//				var oleft = 0; 
+//				var timer = null;
+//				timer = setInterval(function(){
+//					$ul.css({left:oleft--});
+//					if($ul.offset().left<1300-len){
+//						oleft = 0;
+//					}
+//				},1);
+			});
+			
 		</script>
 	</body>
 </html>

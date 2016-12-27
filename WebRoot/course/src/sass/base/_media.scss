@@ -1,9 +1,15 @@
 //媒体查询,导航栏内容过多情况
-@media(max-width:997px){
+@media(max-width:1195px){
     .navbar-default .nav{
-        margin-left: 0px;
         a{
             padding: 15px 10px;
+        }
+    }
+}
+@media(max-width:992px){
+    .navbar-default .nav{
+        li{
+            padding:0;
         }
     }
 }

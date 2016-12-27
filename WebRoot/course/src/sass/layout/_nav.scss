@@ -11,10 +11,12 @@
     border: none;
     height: 50px;
     margin-bottom: 1px;
+    z-index: 10;
     ul{
-        margin-left: 100px;
         li{
             font-size: 14px;
+            padding: 0 1em;
         }
     } 
 }
+
