@@ -1,0 +1,39 @@
+
+//底部
+.footer{
+    background: #CACAD4;
+    margin-top: $marginTop;
+    padding: 20px 0 15px 0;
+    .container{
+        p{
+            font-size: 16px;
+            text-align: center;   
+            line-height: $line-height;
+        }
+        a{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            @extend p;
+            .icon-user{
+                font-size: $fontsize+6;
+                margin-right: 8px;
+                color: #66ADD7;
+            }
+            &:hover{
+                color: #000;
+                .icon-user{
+                    color: dodgerblue;
+                }
+            }
+        }    
+    } 
+    .copyright{
+        margin-top: 10px;
+        p{
+            text-align: center;
+            line-height: $line-height/2;
+        }   
+    }
+     
+}
