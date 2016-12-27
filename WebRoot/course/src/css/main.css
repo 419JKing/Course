@@ -13,10 +13,16 @@
 
 @media (max-width: 1195px) {
   .navbar-default .nav a {
-    padding: 15px 10px; } }
+    padding: 15px 10px; }
+
+  p, .footer .container a {
+    margin-left: 30px; } }
 @media (max-width: 992px) {
   .navbar-default .nav li {
-    padding: 0; } }
+    padding: 0; }
+
+  p, .footer .container a {
+    margin-left: 25px !important; } }
 * {
   margin: 0;
   padding: 0; }
@@ -191,3 +197,12 @@ a {
     left: 0; }
   100% {
     left: -1660px; } }
+.location {
+  height: 32px;
+  background: #ffffff; }
+  .location p, .location .footer .container a, .footer .container .location a {
+    line-height: 32px;
+    font-size: 14px;
+    margin-left: 42px; }
+    .location p a, .location .footer .container a a, .footer .container .location a a {
+      color: #757575; }

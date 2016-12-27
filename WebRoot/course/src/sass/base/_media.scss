@@ -5,11 +5,17 @@
             padding: 15px 10px;
         }
     }
+    p{
+        margin-left: 30px;
+    }
 }
 @media(max-width:992px){
     .navbar-default .nav{
         li{
             padding:0;
         }
+    }
+    p{
+        margin-left: 25px !important;
     }
 }
