@@ -1,0 +1,20 @@
+.list_style{
+    .list-group{
+        margin: 0 20px;
+        height: 472px;
+        a{
+            height:60px;
+            i{
+                color: #f4c600;
+            }
+            span{ 
+                font-size:$fontsize;
+                color: $a;
+                padding-left: 10px;
+                font-weight: normal;
+                background: none;
+                line-height: 40px;
+            }     
+        }
+    }
+}

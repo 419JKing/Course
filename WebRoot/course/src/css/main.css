@@ -218,8 +218,8 @@ a {
     background: #ffffff; }
     .list_main > .list-group .list_title, .list_main > .list-group .badge {
       font-size: 18px;
-      font-weight: bold;
-      color: inherit; }
+      color: inherit;
+      font-weight: normal; }
     .list_main > .list-group .badge {
       background: none;
       padding-top: 10px; }
@@ -229,4 +229,20 @@ a {
       line-height: 36px;
       padding-left: 12px; }
     .list_main > .list-group .list_detail a {
-      padding-left: 50px; }
+      padding-left: 50px;
+      color: #666; }
+
+.list_style .list-group {
+  margin: 0 20px;
+  height: 472px; }
+  .list_style .list-group a {
+    height: 60px; }
+    .list_style .list-group a i {
+      color: #f4c600; }
+    .list_style .list-group a span {
+      font-size: 16px;
+      color: #222222;
+      padding-left: 10px;
+      font-weight: normal;
+      background: none;
+      line-height: 40px; }
