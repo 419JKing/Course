@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>计算机组成原理精品课程</title>
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	</head>
 	<body>
 		<!--前端nav模板-->
@@ -42,14 +42,62 @@
 		<!--nav-->
 		<!--前端nav模板-->
 		
-		
-		<!--当前位置-->
 		<div class="location">
-			<div class="container">
-				<p>当前位置: <a href="">首页</a> > <a href="">申报资料</a></p>
+			<ol class="breadcrumb container">
+				<span>当前位置 ： </span>
+	    		<li><a href="#">首页</a></li>
+	    		<li class="active">申报资料</li>
+			</ol>
+		</div>
+		
+		<!--申报主页-->
+		<div class="list_main container">
+			<div class="list-group">
+			    <a href="#" class="list-group-item">
+			    	<span class="badge">2009/12</span>
+			    	<span class="icon-file-alt icon-3x"></span>
+			    	<span class="list_title">申报表</span>
+			    </a>
+			    <a href="#" class="list-group-item">
+			    	<span class="badge">2015/11</span>
+			    	<span class="icon-file-alt icon-3x"></span>
+			    	<span class="list_title">申报书</span>
+			    </a>
+			    <a href="#" class="list-group-item toggle">
+			    	<span class="badge">2016/03</span>
+			    	<span class="icon-file-alt icon-3x"></span>
+			    	<span class="list_title">佐证材料 >></span>
+			    </a>
+			    <div class="list_detail list-group">
+			    	<a href="#" class="list-group-item list-group-item-info">
+				    	<span class="badge">2016/03/31</span>
+				    	<span class="icon-file icon-3x"></span>
+				    	<span class="list_title">科研论文资料</span>
+				    </a>
+				    <a href="#" class="list-group-item list-group-item-info">
+				    	<span class="badge">2016/03/31</span>
+				    	<span class="icon-file icon-3x"></span>
+				    	<span class="list_title">科研获奖资料</span>
+				    </a>
+				    <a href="#" class="list-group-item list-group-item-info">
+				    	<span class="badge">2016/03/31</span>
+				    	<span class="icon-file icon-3x"></span>
+				    	<span class="list_title">教研教改获奖资料</span>
+				    </a>
+				    <a href="#" class="list-group-item list-group-item-info">
+				    	<span class="badge">2016/03/31</span>
+				    	<span class="icon-file icon-3x"></span>
+				    	<span class="list_title">教师队伍获奖资料</span>
+				    </a>
+				    <a href="#" class="list-group-item list-group-item-info">
+				    	<span class="badge">2016/03/31</span>
+				    	<span class="icon-file icon-3x"></span>
+				    	<span class="list_title">教学获奖资料</span>
+				    </a>
+			    </div>
 			</div>
 		</div>
-		<!--当前位置-->
+		<!--申报主页-->
 		
 		<!--前端footer模板-->
 			<!--底部-->
@@ -68,6 +116,8 @@
 		</div>
 	</div>
 	<!--底部-->	
-		<!--前端footer模板-->		
+		<!--前端footer模板-->
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script src="js/common.js"></script>
 	</body>
 </html>

@@ -15,14 +15,17 @@
   .navbar-default .nav a {
     padding: 15px 10px; }
 
-  p, .footer .container a {
-    margin-left: 30px; } }
+  .breadcrumb {
+    padding: 0 52px !important; } }
 @media (max-width: 992px) {
   .navbar-default .nav li {
     padding: 0; }
 
-  p, .footer .container a {
-    margin-left: 25px !important; } }
+  .breadcrumb {
+    padding: 0 40px !important; }
+
+  .list_main {
+    padding: 0 35px !important; } }
 * {
   margin: 0;
   padding: 0; }
@@ -198,11 +201,32 @@ a {
   100% {
     left: -1660px; } }
 .location {
-  height: 32px;
   background: #ffffff; }
-  .location p, .location .footer .container a, .footer .container .location a {
+  .location .breadcrumb {
+    background: none;
+    padding: 0 60px;
     line-height: 32px;
-    font-size: 14px;
-    margin-left: 42px; }
-    .location p a, .location .footer .container a a, .footer .container .location a a {
-      color: #757575; }
+    font-size: 14px; }
+  .location a {
+    color: #555; }
+
+.list_main {
+  margin: 20px auto;
+  padding: 0 45px; }
+  .list_main > .list-group {
+    height: 600px;
+    background: #ffffff; }
+    .list_main > .list-group .list_title, .list_main > .list-group .badge {
+      font-size: 18px;
+      font-weight: bold;
+      color: inherit; }
+    .list_main > .list-group .badge {
+      background: none;
+      padding-top: 10px; }
+    .list_main > .list-group .list_title {
+      letter-spacing: 3px;
+      vertical-align: top;
+      line-height: 36px;
+      padding-left: 12px; }
+    .list_main > .list-group .list_detail a {
+      padding-left: 50px; }
