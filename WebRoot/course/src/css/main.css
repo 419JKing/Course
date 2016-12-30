@@ -232,6 +232,9 @@ a {
       padding-left: 50px;
       color: #666; }
 
+a b {
+  color: #333; }
+
 .list_style .list-group {
   margin: 0 20px;
   height: 472px; }
