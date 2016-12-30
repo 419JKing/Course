@@ -34,7 +34,9 @@ html, body {
   background: #D8EAFB;
   font: 12px/20px "微软雅黑";
   overflow-x: hidden;
-  zoom: 1; }
+  zoom: 1;
+  height: 100%;
+  width: 100%; }
 
 p, .footer .container a {
   line-height: 1.5em; }
@@ -43,7 +45,10 @@ ul, li {
   list-style: none; }
 
 a {
-  color: #ccc; }
+  color: #777777; }
+
+a:hover {
+  color: #555555; }
 
 .topPic {
   background: #386AE3; }
@@ -86,6 +91,68 @@ a {
     .footer .copyright p, .footer .copyright .container a, .footer .container .copyright a {
       text-align: center;
       line-height: 15px; }
+
+.login_wrap {
+  background: #2b2f32;
+  position: relative;
+  height: 100%;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  z-index: 999; }
+  .login_wrap .login_main {
+    width: 740px;
+    height: 532px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: #ffffff; }
+    .login_wrap .login_main center {
+      font-size: 30px;
+      line-height: 120px; }
+    .login_wrap .login_main .form-group {
+      padding-left: 68px; }
+      .login_wrap .login_main .form-group span {
+        color: #29a0df;
+        float: left;
+        margin-top: 8px; }
+      .login_wrap .login_main .form-group input {
+        height: 52px;
+        width: 475px;
+        margin: 0 0 42px 50px;
+        background: #e5f7ff;
+        font-size: 18px; }
+        .login_wrap .login_main .form-group input[type=password] {
+          margin-left: 54px; }
+        .login_wrap .login_main .form-group input[type=submit] {
+          height: 52px;
+          margin-left: 80px;
+          background: #4accf2;
+          -webkit-border-radius: 22px;
+          border-radius: 22px;
+          color: #ffffff;
+          letter-spacing: 20px;
+          font-size: 20px; }
+      .login_wrap .login_main .form-group:nth-child(3) input {
+        width: 205px;
+        margin-left: 45px; }
+      .login_wrap .login_main .form-group:nth-child(3) img {
+        margin: -42px 0 0 37px;
+        border: 1px solid #000000; }
+      .login_wrap .login_main .form-group:nth-child(3) a {
+        font-size: 24px;
+        vertical-align: top;
+        display: inline-block;
+        height: 50px;
+        border-bottom: 1px solid black;
+        border-bottom-color: #00BFFF;
+        padding: 12px; }
+        .login_wrap .login_main .form-group:nth-child(3) a:hover {
+          text-decoration: none; }
 
 #myCarousel .carousel-control {
   width: 40px;
@@ -207,8 +274,6 @@ a {
     padding: 0 60px;
     line-height: 32px;
     font-size: 14px; }
-  .location a {
-    color: #555; }
 
 .list_main {
   margin: 20px auto;
@@ -229,8 +294,21 @@ a {
       line-height: 36px;
       padding-left: 12px; }
     .list_main > .list-group .list_detail a {
-      padding-left: 50px;
-      color: #666; }
+      padding-left: 50px; }
+
+.list_small .list-group {
+  padding: 0 40px;
+  height: 1000px; }
+  .list_small .list-group a {
+    height: 45px; }
+    .list_small .list-group a i {
+      color: #f4c600; }
+    .list_small .list-group a span {
+      font-size: 16px;
+      color: #222222;
+      padding-left: 10px;
+      font-weight: normal;
+      background: none; }
 
 a b {
   color: #333; }

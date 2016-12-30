@@ -9,6 +9,11 @@
 //   @include border-radius(50%);//或者@include border-radius;
 // }
 
+//透明度
+@mixin opacity($opacity){
+    opacity: $opacity;
+    filter: alpha(opacity=$opacity*100);
+}
 
 //经典居中
 @mixin center-box($width,$height){

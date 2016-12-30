@@ -8,6 +8,8 @@ html,body{
     font:12px/20px "微软雅黑";
     overflow-x: hidden;
     zoom: 1;
+    height: 100%;
+    width: 100%;
 }
 p{
     line-height: 1.5em;
@@ -16,5 +18,8 @@ ul,li{
     list-style: none;
 }
 a{
-    color: #ccc;
+    color: #777777;
+}
+a:hover{
+    color: #555555;
 }
