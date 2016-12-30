@@ -294,8 +294,10 @@ a:hover {
       line-height: 36px;
       padding-left: 12px; }
     .list_main > .list-group .list_detail a {
-      padding-left: 50px;
-      color: #333333; }
+      padding-left: 50px; }
+
+a b {
+  color: #333; }
 
 .list_small .list-group {
   padding: 0 40px;
@@ -325,3 +327,26 @@ a:hover {
       font-weight: normal;
       background: none;
       line-height: 40px; }
+
+.courseAll .course_head {
+  position: relative; }
+  .courseAll .course_head center {
+    height: 90px;
+    font-size: 32px;
+    background: #fedbf4;
+    line-height: 90px; }
+  .courseAll .course_head img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+.courseAll .course_detail {
+  font-size: 16px;
+  background: #fff;
+  padding-top: 35px;
+  padding-bottom: 132px; }
+  .courseAll .course_detail p, .courseAll .course_detail .footer .container a, .footer .container .courseAll .course_detail a, .courseAll .course_detail span {
+    margin: 0 60px 10px 60px;
+    line-height: 30px;
+    letter-spacing: 5px; }
+  .courseAll .course_detail p, .courseAll .course_detail .footer .container a, .footer .container .courseAll .course_detail a {
+    text-indent: 2em; }

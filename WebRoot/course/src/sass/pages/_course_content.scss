@@ -1,0 +1,31 @@
+.courseAll{
+    .course_head{
+        position: relative;
+            center{
+            height: 90px;
+            font-size:32px;
+            background:#fedbf4;
+            line-height: 90px;
+        
+       } 
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .course_detail{
+        font-size:16px;
+        background:#fff;
+        padding-top: 35px;
+        padding-bottom: 132px;
+        p,span{
+            margin:0 60px 10px 60px;
+            line-height: 30px;
+            letter-spacing: 5px;
+           
+        }
+       p{text-indent: 2em;
+        }
+    }
+}
