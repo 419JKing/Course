@@ -31,8 +31,9 @@
 						<li><a href="" class="navbar-link">申报资料</a></li>
 						<li><a href="">课程简介</a></li>
 						<li><a href="">教学大纲</a></li>
-						<li><a href="">教育队伍</a></li>
+						<li><a href="">教学队伍</a></li>
 						<li><a href="">教学资源</a></li>
+						<li><a href="">实践教学</a></li>
 						<li><a href="">教学评价</a></li>
 						<li><a href="">成果展示</a></li>
 						<li><a href="">师生互动</a></li>
@@ -75,10 +76,12 @@
 		<div class="container">
 			<p class="col-sm-4 col-xs-6">站点总访问量:5121</p>
 			<p class="col-sm-4 col-xs-6">当前在线人数:1</p>
-			<a href="" class="col-sm-4 col-xs-12">
-				<span class="icon-user"></span>
-				登录
-			</a>
+			<div href="" class="col-sm-4 col-xs-12">
+				<button data-toggle="modal" data-target="#myModal">
+					<span class="icon-user"></span>
+					登录
+				</button>
+			</div>
 		</div>
 		<div class="copyright">
 			<p class="col-xs-12">copyright@广东海洋大学计算机组成原理精品课程</p>
@@ -86,6 +89,47 @@
 		</div>
 	</div>
 	<!--底部-->	
+	
+		<div class="login_wrap">
+			<!-- 模态框（Modal） -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">
+								用户登录
+							</h4>
+						</div>
+						<div class="modal-body">
+							<form action=""  class="form-inline" role="form">
+								<div class="form-group">
+									<span class="icon-user icon-3x"></span>
+									<input type="text" placeholder="请输入姓名" class="form-control"/>
+								</div>
+								<div class="form-group">
+									<span class="icon-lock icon-3x"></span>
+									<input type="password" placeholder="请输入密码" class="form-control"/>
+								</div>
+								<div class="form-group">
+									<span class="icon-unlock icon-3x"></span>
+									<input type="text" placeholder="请输入验证码" class="form-control"/>
+									<img src="images/indexImg/images/verificationCode.png" alt="验证码"/>
+									<a href="">换一张</a>
+								</div>
+								<div class="form-group">
+									<input type="submit" value="登录" class="form-control"/>
+								</div>
+							</form>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal -->
+			</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--前端footer模板-->
 	</body>
 </html>

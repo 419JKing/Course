@@ -2,14 +2,15 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta charset="UTF-8">
 		<title>计算机组成原理精品课程</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> 
-		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	</head>
 	<body>
 		<!--前端nav模板-->
-					<!--头部img部分-->
+				<!--头部img部分-->
 		<div class="topPic">
 			<img src="images/indexImg/top.png" class="img-responsive" alt="responsive image"/>
 		</div>
@@ -44,33 +45,36 @@
 		<!--前端nav模板-->
 		
 		<!--当前位置-->
-			<div class="location">
+		<div class="location">
 			<ol class="breadcrumb container">
 				<span>当前位置 ： </span>
-	    		<li><a href="index.html">首页</a></li>
-	    		<li class="active">教学大纲</li>
+	    		<li><a href="#">首页</a></li>
+	    		<li class="active">教学评价</li>
 			</ol>
 		</div>
 		<!--当前位置-->
 		
-		<!--教学大纲页面-->
-			<div class="container list_style">
-				<div class="list-group">
-					<a class="list-group-item">
-						<b class="icon-sitemap icon-2x"></b>
-					    <span class="badge">2016/03/27</span>
-					   	<span>实验教学大纲</span>
-					</a> 
-					<a class="list-group-item">
-						<b class="icon-book icon-2x"></b>
-					    <span class="badge">2016/03/27</span>
-					   	<span>理论教学大纲</span>
-					</a> 
+		<!--评论主体-->
+		<div class="container communication_main">
+			<form class="publish form-inline" role="form">
+				<div class="form-group">
+					<input type="text" placeholder="说点什么..." class="form-control"/>
+					<input type="submit" class="btn btn-primary" value="发 布"/>
 				</div>
-				
-			</div>
-		<!--教学大纲页面-->
-		
+			</form>
+			<ul class="comment_list list-group">
+				<li class="list-group-item row">
+					<div class="col-md-1">
+						<img src="images/indexImg/images/person_image.png"/>
+					</div>
+					<div class="col-md-11">
+						<h4 class="list-group-item-heading">一楼</h4>
+						<p class="list-group-item-text">很喜欢这个课程，方便课后温习，提高效率~~~~在这样一个交流的平台，大家互相学习，共同进步！</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--评论主体-->
 		
 		<!--前端footer模板-->
 				<!--底部-->
@@ -133,6 +137,6 @@
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--前端footer模板-->
-		
 	</body>
 </html>
+

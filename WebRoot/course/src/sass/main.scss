@@ -15,7 +15,6 @@
 //页面公共部分样式
 @import 'layout/nav'
 ,'layout/footer'
-,'layout/login'
 ;
 
 //独立页面导入
@@ -27,7 +26,9 @@
 ,'pages/resultsShow'
 ,'pages/syllabus'
 ,'pages/teachingEvaluation'
-,'pages/teachingSource'
+,'pages/teachingSource_unitTest'
 ,'pages/teachingTeam'
 ,'pages/course_content'
+,'pages/teachingSource_courseware'
+,'pages/teachingSource_video'
 ;

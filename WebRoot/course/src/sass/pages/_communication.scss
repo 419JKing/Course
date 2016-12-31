@@ -1,0 +1,23 @@
+.communication_main{
+    margin: 20px auto;
+    padding: 0 45px;
+    .publish{
+        background: #ffffff;
+        padding: 25px 36px;
+        .form-group{
+            width: 100%;
+            input{
+                height: 50px;
+                font-size: $fontsize+2;
+                &[type=text]{
+                    width: 860px;
+                }
+                &[type=submit]{
+                    float: right;
+                    width: 105px;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+}

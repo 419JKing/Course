@@ -23,3 +23,92 @@ a{
 a:hover{
     color: #555555;
 }
+
+//重写bootstrap框架的一些样式
+.badge{
+    background: none;
+    font-weight: normal;
+}
+
+//location样式
+.location{
+    background: #ffffff;
+    .breadcrumb{
+        background: none;
+        padding: 0 57px;
+        line-height: 32px;
+        font-size: $fontsize+(-2);
+    }
+}
+
+//list_main的样式
+.list_main{
+    margin: 20px auto;
+    padding: 0 45px;
+    &>.list-group{
+        height: 600px;
+        background: #ffffff;
+        .list_title,.badge{
+            font-size: $fontsize+2;
+            color: inherit;
+        }
+        .badge{
+            padding-top: 10px;
+        }
+        .list_title{
+            letter-spacing: 3px;
+            vertical-align: top;
+            line-height: 36px;
+            padding-left: 12px;
+        }
+        .list_detail{
+            a{
+                padding-left: 50px;
+                color: #333333;
+            }
+        }
+    }
+}
+
+//list_small的样式
+.list_small{
+    .list-group{
+        margin: 0 40px;
+        height: 1000px;
+        a{
+            height: 45px;
+            i{
+                color: #f4c600;
+            }
+            span{ 
+                font-size:$fontsize;
+                color: #222222;
+                padding-left: 10px;
+                font-weight: normal;
+                background: none;
+            }     
+        }
+    }
+}
+
+//list_style的样式
+.list_style{
+    .list-group{
+        margin: 0 20px;
+        height: 472px;
+        a{
+            height:60px;
+            i{
+                color: #f4c600;
+            }
+            span{ 
+                font-size:$fontsize;
+                color: #222222;
+                padding-left: 10px;
+                font-weight: normal;
+                background: none;
+                line-height: 40px;
+            }     
+        }
+    }
+}

@@ -7,10 +7,10 @@
     .container{
         p{
             font-size: 16px;
-            text-align: center;   
+            text-align: center;
             line-height: $line-height;
         }
-        a{
+        div{
             color: #333;
             text-decoration: none;
             font-weight: bold;
@@ -26,6 +26,10 @@
                     color: dodgerblue;
                 }
             }
+            button{
+                background: none;
+                border: none;
+            }
         }    
     } 
     .copyright{
@@ -36,4 +40,75 @@
         }   
     }
      
+}
+
+//登录界面
+.login_wrap{
+    .modal-dialog{
+        height: 100%;
+        width: 100%;
+    }
+    .modal-content{
+        @include center-box(740px,532px);
+    }
+    .modal-header{
+        height: 120px;
+        border-bottom: none;
+        .modal-title{
+            text-align: center;
+            font-size: 30px;
+            line-height: 120px;
+            letter-spacing: 10px;
+        }
+    }
+    .modal-body{
+        .form-group{
+            padding-left: 68px;
+            span{
+                color: #29a0df;
+                float: left;
+                margin-top: 8px;
+            }
+            input{
+                height: 52px;
+                width: 475px;
+                margin: 0 0 42px 50px;
+                background: #e5f7ff;
+                font-size: $fontsize+2;
+                &[type=password]{
+                    margin-left: 54px;
+                }
+                &[type=submit]{
+                    margin-left: 80px;
+                    background: #4accf2;
+                    @include border-radius(22px);
+                    color: #ffffff;
+                    letter-spacing: 20px;
+                    font-size: 20px;
+                }
+            }
+            &:nth-child(3){
+                input{
+                    width: 205px;
+                    margin-left: 45px;
+                }
+                img{
+                    margin: -42px 0 0 37px;
+                    border: 1px solid #000000;
+                }
+                a{
+                    font-size: 24px;
+                    vertical-align: top;
+                    display: inline-block;
+                    height: 50px;
+                    border-bottom: 1px solid black;
+                    border-bottom-color: #00BFFF;
+                    padding: 12px;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }
