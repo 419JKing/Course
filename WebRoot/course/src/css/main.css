@@ -16,7 +16,10 @@
     padding: 0 3px; }
 
   .breadcrumb {
-    padding: 0 48px !important; } }
+    padding: 0 48px !important; }
+
+  .list_head p, .list_head .footer .container div, .footer .container .list_head div {
+    margin-top: 30px !important; } }
 @media (max-width: 992px) {
   .navbar-default .nav {
     margin-left: 5px; }
@@ -25,6 +28,9 @@
 
   .breadcrumb {
     padding: 0 40px !important; }
+
+  .list_head p, .list_head .footer .container div, .footer .container .list_head div {
+    margin-top: 18px !important; }
 
   .list_main {
     padding: 0 35px !important; }
@@ -135,7 +141,7 @@ a:hover {
       color: #f4c600; }
     .list_small .list-group a span {
       font-size: 16px;
-      color: #222222;
+      color: #444444;
       padding-left: 10px;
       font-weight: normal;
       background: none; }
@@ -419,3 +425,43 @@ a:hover {
 .teachingSource_video .list-group {
   height: 450px;
   background: #ffffff; }
+
+.teachingSource_exam .list-group {
+  height: 1080px; }
+
+.teachingSource_CAI .list-group {
+  height: auto;
+  padding-bottom: 20px;
+  background: #ffffff; }
+  .teachingSource_CAI .list-group .list-group-item {
+    border: none; }
+  .teachingSource_CAI .list-group .pagination {
+    display: block;
+    padding-top: 50px;
+    text-align: center; }
+    .teachingSource_CAI .list-group .pagination li {
+      display: inline-block;
+      margin: 0 150px; }
+      .teachingSource_CAI .list-group .pagination li a {
+        -webkit-border-radius: 5px;
+        border-radius: 5px; }
+      .teachingSource_CAI .list-group .pagination li .active {
+        border: none; }
+.teachingSource_CAI .list_head {
+  margin: 0 40px 20px 40px;
+  background: #ffffff;
+  height: 140px; }
+  .teachingSource_CAI .list_head img {
+    width: 125px;
+    height: auto;
+    float: left;
+    margin: 20px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+  .teachingSource_CAI .list_head p, .teachingSource_CAI .list_head .footer .container div, .footer .container .teachingSource_CAI .list_head div {
+    font-size: 17px;
+    color: #666666;
+    text-indent: 2em;
+    margin-top: 40px;
+    padding-right: 24px;
+    text-align: left; }

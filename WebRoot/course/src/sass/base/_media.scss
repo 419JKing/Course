@@ -8,6 +8,11 @@
     .breadcrumb{
         padding: 0 48px !important;
     }
+    .list_head{
+        p{
+            margin-top: 30px !important;
+        }
+    }
 }
 @media(max-width:992px){
     .navbar-default .nav{
@@ -18,6 +23,11 @@
     }
     .breadcrumb{
         padding: 0 40px !important;
+    }
+    .list_head{
+        p{
+            margin-top: 18px !important;
+        }
     }
     .list_main{
         padding: 0 35px !important;
