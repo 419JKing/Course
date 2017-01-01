@@ -1,0 +1,13 @@
+.teachingSource_referenceBook .book_list {
+  padding: 0 40px;
+}
+.teachingSource_referenceBook .book_list li {
+  height: 108px;
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+.teachingSource_referenceBook .book_list li img {
+  float: left;
+}
+
+/*# sourceMappingURL=_teachingSource_referenceBook.css.map */

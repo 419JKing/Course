@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,wCAAU;EACN,OAAO,EAAE,MAAM;;AACf,2CAAE;EACE,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,OAAO;;AACnB,+CAAG;EACC,KAAK,EAAE,IAAI",
+"sources": ["../sass/_teachingSource_referenceBook.scss"],
+"names": [],
+"file": "_teachingSource_referenceBook.css"
+}

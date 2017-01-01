@@ -19,7 +19,10 @@
     padding: 0 48px !important; }
 
   .list_head p, .list_head .footer .container div, .footer .container .list_head div {
-    margin-top: 30px !important; } }
+    margin-top: 30px !important; }
+
+  .communication_main input[type=text] {
+    width: 640px !important; } }
 @media (max-width: 992px) {
   .navbar-default .nav {
     margin-left: 5px; }
@@ -35,47 +38,18 @@
   .list_main {
     padding: 0 35px !important; }
 
-  #myModal .modal-content {
-    width: 560px;
-    height: 400px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto; }
-  #myModal .modal-header {
-    height: 80px; }
-  #myModal .modal-title {
-    line-height: 80px;
-    font-size: 24px; }
-  #myModal .modal-body .form-group {
-    padding-left: 16px;
-    margin-bottom: 0; }
-    #myModal .modal-body .form-group span {
-      margin-top: 0; }
-    #myModal .modal-body .form-group input {
-      display: inline-block;
-      height: 40px;
-      width: 375px;
-      margin: 0 0 32px 32px; }
-      #myModal .modal-body .form-group input[type=password] {
-        margin-left: 36px; }
-      #myModal .modal-body .form-group input[type=submit] {
-        margin-left: 60px; }
-    #myModal .modal-body .form-group:nth-child(3) input {
-      width: 150px;
-      margin-left: 28px; }
-    #myModal .modal-body .form-group:nth-child(3) img {
-      height: 40px;
-      width: auto;
-      margin: -32px 0 0 24px; }
-    #myModal .modal-body .form-group:nth-child(3) a {
-      font-size: 24px;
-      vertical-align: top;
-      display: inline-block;
-      height: 40px;
-      padding: 12px; } }
+  .communication_main input[type=text] {
+    width: 420px !important; }
+
+  .teachingSource_referenceBook li:nth-child(4) {
+    height: 240px !important; }
+    .teachingSource_referenceBook li:nth-child(4) img:nth-of-type(1) {
+      padding: 36px 21px !important; }
+  .teachingSource_referenceBook .book_detail h3 {
+    padding-top: 24px !important;
+    font-size: 16px !important; }
+  .teachingSource_referenceBook .book_detail h4 {
+    font-size: 15px !important; } }
 * {
   margin: 0;
   padding: 0; }
@@ -128,9 +102,12 @@ a:hover {
       vertical-align: top;
       line-height: 36px;
       padding-left: 12px; }
-    .list_main > .list-group .list_detail a {
-      padding-left: 50px;
-      color: #333333; }
+    .list_main > .list-group .list_detail {
+      margin-bottom: 0;
+      display: none; }
+      .list_main > .list-group .list_detail a {
+        padding-left: 60px;
+        color: #333333; }
 
 .list_small .list-group {
   margin: 0 40px;
@@ -176,6 +153,48 @@ a:hover {
   .navbar-default ul li {
     font-size: 14px;
     padding: 0 12px; }
+
+#myModal .modal-content {
+  width: 560px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+#myModal .modal-header {
+  height: 80px; }
+#myModal .modal-title {
+  line-height: 80px;
+  font-size: 24px; }
+#myModal .modal-body .form-group {
+  padding-left: 16px;
+  margin-bottom: 0; }
+  #myModal .modal-body .form-group span {
+    margin-top: 0; }
+  #myModal .modal-body .form-group input {
+    display: inline-block;
+    height: 40px;
+    width: 375px;
+    margin: 0 0 32px 32px; }
+    #myModal .modal-body .form-group input[type=password] {
+      margin-left: 36px; }
+    #myModal .modal-body .form-group input[type=submit] {
+      margin-left: 60px; }
+  #myModal .modal-body .form-group:nth-child(3) input {
+    width: 150px;
+    margin-left: 28px; }
+  #myModal .modal-body .form-group:nth-child(3) img {
+    height: 40px;
+    width: auto;
+    margin: -32px 0 0 24px; }
+  #myModal .modal-body .form-group:nth-child(3) a {
+    font-size: 24px;
+    vertical-align: top;
+    display: inline-block;
+    height: 40px;
+    padding: 12px; }
 
 .footer {
   background: #CACAD4;
@@ -395,6 +414,28 @@ a:hover {
           float: right;
           width: 105px;
           letter-spacing: 5px; }
+  .communication_main .comment_list {
+    background: #ffffff;
+    padding: 0 15px 100px 15px; }
+    .communication_main .comment_list li {
+      border-bottom: 2px solid #888888;
+      position: relative; }
+      .communication_main .comment_list li img {
+        position: absolute;
+        margin: 20px 15px 0 5px; }
+      .communication_main .comment_list li .comment_content {
+        padding: 0 20px 30px 0;
+        margin-left: 100px; }
+        .communication_main .comment_list li .comment_content h3 {
+          padding-top: 28px;
+          font-size: 20px; }
+        .communication_main .comment_list li .comment_content p, .communication_main .comment_list li .comment_content .footer .container div, .footer .container .communication_main .comment_list li .comment_content div {
+          font-size: 15px; }
+      .communication_main .comment_list li time {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        font-size: 14px; }
 
 .courseAll .course_head {
   position: relative; }
@@ -465,3 +506,50 @@ a:hover {
     margin-top: 40px;
     padding-right: 24px;
     text-align: left; }
+
+.teachingSource_referenceBook .book_list {
+  padding: 0 40px; }
+  .teachingSource_referenceBook .book_list li {
+    height: 192px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    position: relative; }
+    .teachingSource_referenceBook .book_list li img:nth-of-type(1) {
+      float: left;
+      padding: 21px; }
+    .teachingSource_referenceBook .book_list li img:nth-of-type(2) {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .teachingSource_referenceBook .book_list li .book_detail h3 {
+      padding-top: 40px;
+      font-size: 18px; }
+    .teachingSource_referenceBook .book_list li .book_detail h4 {
+      font-size: 16px; }
+    .teachingSource_referenceBook .book_list li .book_detail p, .teachingSource_referenceBook .book_list li .book_detail .footer .container div, .footer .container .teachingSource_referenceBook .book_list li .book_detail div {
+      font-size: 14px;
+      padding: 5px 16px 0 0; }
+    .teachingSource_referenceBook .book_list li:nth-child(4) h3 {
+      padding-top: 30px; }
+
+.teachingSource_Websize ul {
+  padding: 0 20px;
+  margin: 0 40px;
+  background: #ffffff;
+  height: 1000px; }
+  .teachingSource_Websize ul li {
+    border-bottom: 2px solid #666666;
+    height: 81px;
+    position: relative; }
+    .teachingSource_Websize ul li span {
+      float: left;
+      padding: 18px 0 0 10px;
+      height: 60px; }
+    .teachingSource_Websize ul li .Websize_detail {
+      padding: 0 0 0 48px; }
+      .teachingSource_Websize ul li .Websize_detail h3 {
+        margin: 0;
+        padding: 16px 0 10px 0;
+        font-size: 16px; }
+      .teachingSource_Websize ul li .Websize_detail p, .teachingSource_Websize ul li .Websize_detail .footer .container div, .footer .container .teachingSource_Websize ul li .Websize_detail div {
+        font-size: 15px; }

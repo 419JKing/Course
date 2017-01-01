@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta charset="UTF-8">
 		<title>计算机组成原理精品课程</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	</head>
-	
 	<body>
 		<!--前端nav模板-->
 				<!--头部img部分-->
@@ -49,34 +49,60 @@
 			<ol class="breadcrumb container">
 				<span>当前位置 ： </span>
 	    		<li><a href="index.html">首页</a></li>
-	    		<li><a href="courseIntroduction.html">课程简介</a></li>
-	    		<li class="active">教学内容与安排</li>
+	    		<li><a href="teachingSource.html">教学资源</a></li>
+	    		<li class="active">参考书</li>
 			</ol>
 		</div>
 		<!--当前位置-->
 		
-		<!--教学内容与安排页面-->
-		<div class="container courseAll">
-			<div class="course_head">
-				<img src="images/courseIntroduction/blueCorner.png" />
-				<center>
-					教学内容与安排
-				</center>
-			</div>
-			<div class="course_detail">
-				<p >
-					该课程全面地介绍了计算机单机系统的组成原理及内部运行机制，以运算器、控制器、存储器、输入和输出五大部件为主线，以存储程序思想为指导，以寄存器传
-送级以上层来讲单机计算机系统中各部件的内部工作原理、组成结构以及相互联系，包括数的表示及其运算、运算器和控制器的组成及工作原理，分层次的存储系统构成
-及设计，指令系统的一般构成及设计思想和方法，控制器的设计、微程序设计原理、总线结构和设计、中断和输入输出系统等。并结合当前新技术，介绍了多媒体信息的
-表示CISC与RISC、多级Cache及一致性问题，USB总线技术，多总线分级结构以及流水处理、并行处理等内容。
-				</p>
-				<p>
-					    实验教学环节开设了运算器、存储器、微控制器、数据传送等验证性实验和基于微控器的复杂模型机设计和具有中断处理功能的模型机等课程设计性实验。学生通
-过前期的验证性实验掌握各部件的工作原理和数据通路的构成，在设计性实验中学会指令系统的设计方法，理解计算机整机的组成和设计。
-				</p>
-			</div>
+		<!--申报主页-->
+		<div class="container teachingSource_referenceBook">
+			<ul class="book_list">
+				<li>
+					<img src="images/indexImg/images/book1.png" />
+					<div class="book_detail">
+						<h3>书名：计算机组成原理（第四版） </h3>
+						<h4>作者：白中英主编 </h4>
+						<p>本书介绍计算机单处理机系统组成和工作原理。内容包括：计算机系统概论；运算方法和运算器；存储系统；指令系统；
+中央处理器；总线系统；外围设备；输入输出系统。</p>
+					</div>
+					<img src="images/courseIntroduction/corner_yellow.png" />
+				</li>
+				<li>
+					<img src="images/indexImg/images/book2.png" />
+					<div class="book_detail">
+						<h3>书名：计算机组成原理解题指南（第四版） </h3>
+						<h4>作者：白中英主编  科学出版社出版  </h4>
+						<p>《计算机组成原理解题指南》是《计算机组成原理》（第四版·立体化教材）的配套教材，提供了“计算机组成原理”课
+程的典型题解660题，分选择、填空、计算、证明、分析、设计六大类型。所选题解少而精，并给出参考答案。</p>
+					</div>
+					<img src="images/courseIntroduction/corner_yellow.png" />
+				</li>
+				<li>
+					<img src="images/indexImg/images/book3.png" />
+					<div class="book_detail">
+						<h3>书名：计算机组成与设计 </h3>
+						<h4>作者：王诚</h4>
+						<p>本书共分5章。第1章简单介绍逻辑代数和常用逻辑器件；第2～5章讲解组成原理与设计的核心内容，包括中央处理器
+（CPU）、存储器子系统和输人输出子系统。</p>
+					</div>
+					<img src="images/courseIntroduction/corner_yellow.png" />
+				</li>
+				<li>
+					<img src="images/indexImg/images/book4.png" />
+					<div class="book_detail">
+						<h3>书名：计算机组成原理（第2版）</h3>
+						<h4>作者：蒋本珊 </h4>
+						<p>全书共分为4篇，第1篇(第1、2章)介绍计算机基本组成、发展及应用；第2篇(第3～5章)介绍系统总线、存储器和输入
+输出系统；第3篇(第6～8章)介绍CPU的特性、结构和功能，算术逻辑单元、指令流水、RISC技术及中断系统；第4篇
+(第9、10章)介绍控制单元的功能和设计，包括时序系统以及采用组合逻辑和微程序设计控制单元的设计思想与实现措
+施。每章后均附有思考题与习题。</p>
+					</div>
+					<img src="images/courseIntroduction/corner_yellow.png" />
+				</li>
+			</ul>
 		</div>
-		<!--教学内容与安排页面-->
+		<!--申报主页-->
 		
 		<!--前端footer模板-->
 				<!--底部-->
@@ -139,5 +165,8 @@
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--前端footer模板-->
+		<script type="text/javascript" src="js/common.js" ></script>
 	</body>
 </html>
+
+>

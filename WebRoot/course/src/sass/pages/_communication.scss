@@ -20,4 +20,33 @@
             }
         }
     }
+    .comment_list{
+        background: #ffffff;
+        padding: 0 15px 100px 15px;
+        li{
+            border-bottom: 2px solid #888888;
+            position: relative;
+            img{
+                position: absolute;
+                margin: 20px 15px 0 5px;
+            }
+            .comment_content{
+                padding: 0 20px 30px 0;
+                margin-left: 100px;
+                h3{
+                    padding-top: 28px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            time{
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                font-size: 14px;
+            }
+        }
+    }
 }

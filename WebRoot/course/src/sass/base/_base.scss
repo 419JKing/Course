@@ -62,8 +62,11 @@ a:hover{
             padding-left: 12px;
         }
         .list_detail{
+            margin-bottom: 0;
+            display: none;
+            
             a{
-                padding-left: 50px;
+                padding-left: 60px;
                 color: #333333;
             }
         }

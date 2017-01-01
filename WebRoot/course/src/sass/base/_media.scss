@@ -13,6 +13,11 @@
             margin-top: 30px !important;
         }
     }
+    .communication_main{
+        input[type=text]{
+            width: 640px !important;
+        }
+    }
 }
 @media(max-width:992px){
     .navbar-default .nav{
@@ -33,55 +38,25 @@
         padding: 0 35px !important;
     }
     
-    //登录弹框的响应式
-    #myModal{
-        .modal-content{
-            @include center-box(560px,400px);
+    .communication_main{
+        input[type=text]{
+            width: 420px !important;
         }
-        .modal-header{
-            height: 80px;
+    }
+    .teachingSource_referenceBook{
+        li:nth-child(4){
+            height: 240px !important;
+            img:nth-of-type(1){
+                padding: 36px 21px !important;
+            }
         }
-        .modal-title{
-            line-height: 80px;
-            font-size: 24px;
-        }
-        .modal-body{
-            .form-group{
-                padding-left: 16px;
-                margin-bottom: 0;
-                span{
-                    margin-top: 0;
-                }
-                input{
-                    display: inline-block;
-                    height: 40px;
-                    width: 375px;
-                    margin: 0 0 32px 32px;
-                    &[type=password]{
-                        margin-left: 36px;
-                    }
-                    &[type=submit]{
-                        margin-left: 60px;
-                    }
-                }
-                &:nth-child(3){
-                    input{
-                        width: 150px;
-                        margin-left: 28px;
-                    }
-                    img{
-                        height: 40px;
-                        width: auto;
-                        margin: -32px 0 0 24px;
-                    }
-                    a{
-                        font-size: 24px;
-                        vertical-align: top;
-                        display: inline-block;
-                        height: 40px;
-                        padding: 12px;
-                    }
-                }
+        .book_detail{
+            h3{
+                padding-top: 24px !important;
+                font-size: 16px !important;
+            }
+            h4{
+                font-size: 15px !important;
             }
         }
     }
