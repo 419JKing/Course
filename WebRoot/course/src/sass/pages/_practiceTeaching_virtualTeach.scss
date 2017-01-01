@@ -1,0 +1,27 @@
+.practiceTeaching_virtualTeach{
+    height: 1000px;
+    padding: 0 40px;
+    .left_list{
+        width: 15%;
+        float: left;
+        height: 100%;
+        background: #b7d5f4;
+        a{
+            height: 60px;
+            display: block;
+            line-height: 60px;
+            text-align: center;
+            font-size: 16px;
+            &:hover{
+                text-decoration: none;
+                background: #86c2fd;
+            }
+        }
+    }
+    .right_main{
+        background: #ffffff;
+        width: 85%;
+        height: 100%;
+        margin-left: 15%;
+    }
+}

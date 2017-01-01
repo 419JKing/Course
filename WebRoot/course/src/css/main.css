@@ -521,3 +521,26 @@ a:hover {
         font-size: 16px; }
       .teachingSource_Websize ul li .Websize_detail p, .teachingSource_Websize ul li .Websize_detail .footer .container div, .footer .container .teachingSource_Websize ul li .Websize_detail div {
         font-size: 15px; }
+
+.practiceTeaching_virtualTeach {
+  height: 1000px;
+  padding: 0 40px; }
+  .practiceTeaching_virtualTeach .left_list {
+    width: 15%;
+    float: left;
+    height: 100%;
+    background: #b7d5f4; }
+    .practiceTeaching_virtualTeach .left_list a {
+      height: 60px;
+      display: block;
+      line-height: 60px;
+      text-align: center;
+      font-size: 16px; }
+      .practiceTeaching_virtualTeach .left_list a:hover {
+        text-decoration: none;
+        background: #86c2fd; }
+  .practiceTeaching_virtualTeach .right_main {
+    background: #ffffff;
+    width: 85%;
+    height: 100%;
+    margin-left: 15%; }
