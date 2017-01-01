@@ -1,0 +1,63 @@
+//媒体查询,导航栏内容过多情况
+@media(max-width:1195px){
+    .navbar-default .nav{
+        li{
+            padding: 0 3px;
+        }
+    }
+    .breadcrumb{
+        padding: 0 48px !important;
+    }
+    .list_head{
+        p{
+            margin-top: 30px !important;
+        }
+    }
+    .communication_main{
+        input[type=text]{
+            width: 640px !important;
+        }
+    }
+}
+@media(max-width:992px){
+    .navbar-default .nav{
+        margin-left: 5px;
+        a{
+            padding:15px 4px;
+        }
+    }
+    .breadcrumb{
+        padding: 0 40px !important;
+    }
+    .list_head{
+        p{
+            margin-top: 18px !important;
+        }
+    }
+    .list_main{
+        padding: 0 35px !important;
+    }
+    
+    .communication_main{
+        input[type=text]{
+            width: 420px !important;
+        }
+    }
+    .teachingSource_referenceBook{
+        li:nth-child(4){
+            height: 240px !important;
+            img:nth-of-type(1){
+                padding: 36px 21px !important;
+            }
+        }
+        .book_detail{
+            h3{
+                padding-top: 24px !important;
+                font-size: 16px !important;
+            }
+            h4{
+                font-size: 15px !important;
+            }
+        }
+    }
+}

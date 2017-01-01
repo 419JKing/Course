@@ -1,0 +1,35 @@
+
+//带默认值的border-radius
+@mixin border-radius($radius:3px){
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+//调用
+// .box {
+//   @include border-radius(50%);//或者@include border-radius;
+// }
+
+//透明度
+@mixin opacity($opacity){
+    opacity: $opacity;
+    filter: alpha(opacity=$opacity*100);
+}
+
+//经典居中
+@mixin center-box($width,$height){
+    width: $width;
+    height: $height;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@mixin my-transform($obj){
+    transform:$obj;
+    -webkit-transform:$obj;
+    -moz-transform:$obj;
+    -ms-transform: $obj;
+}

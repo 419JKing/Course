@@ -1,0 +1,45 @@
+.teachingSource_CAI{
+    .list-group{
+        height: auto;
+        padding-bottom: 20px;
+        background: #ffffff;
+        .list-group-item{
+            border: none;
+        }
+        .pagination{
+            display: block;
+            padding-top: 50px;
+            text-align: center;
+            li{
+                display: inline-block;
+                margin: 0 150px;
+                a{
+                    @include border-radius(5px);
+                }
+                .active{
+                    border: none;
+                }
+            }
+        }
+    }
+    .list_head{
+        margin: 0 40px 20px 40px;
+        background: #ffffff;
+        height: 140px;
+        img{
+            width: 125px;
+            height: auto;
+            float: left;
+            margin: 20px;
+            @include border-radius;
+        }
+        p{
+            font-size: $fontsize+1;
+            color: #666666;
+            text-indent: 2em;
+            margin-top: 40px;
+            padding-right: 24px;
+            text-align: left;
+        }
+    }
+}

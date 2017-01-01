@@ -1,0 +1,38 @@
+@charset 'urf-8';
+
+//变量导入
+@import 'helpers/variables'
+,'helpers/placeholders'
+,'helpers/mixins'
+;
+//媒体查询
+@import 'base/media'
+;
+//页面基础样式
+@import 'base/base'
+;
+
+//页面公共部分样式
+@import 'layout/nav'
+,'layout/footer'
+;
+
+//独立页面导入
+@import 'pages/index'
+,'pages/communication'
+,'pages/courseIntroduction'
+,'pages/declarationInfo'
+,'pages/practiceTeaching'
+,'pages/resultsShow'
+,'pages/syllabus'
+,'pages/teachingEvaluation'
+,'pages/teachingSource_unitTest'
+,'pages/teachingTeam'
+,'pages/course_content'
+,'pages/teachingSource_courseware'
+,'pages/teachingSource_video'
+,'pages/teachingSource_exam'
+,'pages/teachingSource_CAI'
+,'pages/teachingSource_referenceBook'
+,'pages/teachingSource_Websize'
+;

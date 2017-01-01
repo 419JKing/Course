@@ -1,0 +1,30 @@
+.teachingSource_Websize{
+    ul{
+        padding: 0 20px;
+        margin: 0 40px;
+        background: #ffffff;
+        height: 1000px;
+        li{
+            border-bottom: 2px solid #666666;
+            height: 81px;
+            position: relative;
+            span{
+                float: left;
+                padding : 18px 0 0 10px;
+                height: 60px;
+            }
+            .Websize_detail{
+                padding: 0 0 0 48px;
+                h3{
+                    margin: 0;
+                    padding: 16px 0 10px 0;
+                    font-size: $fontsize;
+                }
+                p{
+                    font-size: $fontsize+(-1);
+                }
+            }
+            
+        }
+    }
+}

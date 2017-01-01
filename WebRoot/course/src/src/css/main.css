@@ -5,7 +5,7 @@
   font-weight: bold;
   letter-spacing: 0.2em; }
 
-.courseShow li a .imgBox .shadow, .courseShow li a:hover .shadow, .tips .links {
+.courseShow li a .imgBox .shadow, .courseShow li a:hover .shadow {
   transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   -moz-transition: all .2s ease-in;
@@ -365,58 +365,6 @@ a:hover {
     left: 0; }
   100% {
     left: -1660px; } }
-.tips {
-  position: relative; }
-  .tips .btn {
-    height: 140px;
-    position: fixed;
-    width: 100px;
-    top: 50%;
-    margin-top: -70px;
-    left: 0;
-    z-index: 11;
-    background: url(../images/indexImg/btn.png) no-repeat; }
-  .tips .links {
-    width: 250px;
-    height: 162px;
-    position: fixed;
-    top: 50%;
-    margin-top: -80px;
-    left: 48px;
-    background: #FCFAFA;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    z-index: 10;
-    box-shadow: 2px 2px 6px 1px #999;
-    top: -80px; }
-    .tips .links li {
-      border-bottom: 1px dashed #ccc;
-      padding: 3px 10px; }
-      .tips .links li:hover {
-        background: #E3E3E3; }
-      .tips .links li a {
-        color: #333;
-        font-size: 12px;
-        display: block;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap; }
-      .tips .links li:last-child {
-        text-align: right; }
-    .tips .links:before {
-      content: "";
-      width: 0;
-      height: 0;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: -20px;
-      margin-top: -6px;
-      border-top: 8px solid transparent;
-      border-right: 12px solid #FCFAFA;
-      border-bottom: 8px solid transparent;
-      border-left: 8px solid transparent; }
-
 .communication_main {
   margin: 20px auto;
   padding: 0 45px; }

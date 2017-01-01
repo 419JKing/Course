@@ -1,0 +1,117 @@
+
+//底部
+.footer{
+    background: #CACAD4;
+    margin-top: $marginTop;
+    padding: 20px 0 15px 0;
+    .container{
+        p{
+            font-size: 16px;
+            text-align: center;
+            line-height: $line-height;
+        }
+        div{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            @extend p;
+            .icon-user{
+                font-size: $fontsize+6;
+                margin-right: 8px;
+                color: #66ADD7;
+            }
+            &:hover{
+                color: #000;
+                .icon-user{
+                    color: dodgerblue;
+                }
+            }
+            button{
+                background: none;
+                border: none;
+            }
+        }    
+    } 
+    .copyright{
+        margin-top: 10px;
+        p{
+            text-align: center;
+            line-height: $line-height/2;
+        }   
+    }
+     
+}
+
+//登录界面
+.login_wrap{
+    .modal-dialog{
+        height: 100%;
+        width: 100%;
+    }
+    .modal-content{
+        @include center-box(560px,400px);
+    }
+    .modal-header{
+        height: 80px;
+        border-bottom: none;
+        .modal-title{
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+    }
+    .modal-body{
+        .form-group{
+            padding-left: 16px;
+            margin-bottom: 0;
+            span{
+                color: #29a0df;
+                float: left;
+            }
+            input{
+                height: 40px;
+                width: 375px;
+                margin: 0 0 32px 32px;
+                background: #e5f7ff;
+                display: inline-block;
+                font-size: 15px;
+                &[type=password]{
+                    margin-left: 36px;
+                }
+                &[type=submit]{
+                    margin-left: 60px;
+                    background: #4accf2;
+                    @include border-radius(22px);
+                    color: #ffffff;
+                    letter-spacing: 20px;
+                    font-size: 20px;
+                }
+            }
+            &:nth-child(3){
+                input{
+                    width: 150px;
+                    margin-left: 28px;
+                }
+                img{
+                    height: 40px;
+                    width: auto;
+                    margin: -32px 0 0 24px;
+                    border: 1px solid #000000;
+                }
+                a{
+                    font-size: 15px;
+                    vertical-align: top;
+                    display: inline-block;
+                    height: 40px;
+                    padding: 12px;
+                    border-bottom: 1px solid black;
+                    border-bottom-color: #00BFFF;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
