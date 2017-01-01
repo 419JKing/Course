@@ -123,20 +123,27 @@ a:hover {
       font-weight: normal;
       background: none; }
 
-.list_style .list-group {
+.list_style > .list-group {
   margin: 0 20px;
-  height: 472px; }
-  .list_style .list-group a {
+  height: 640px;
+  background: #ffffff; }
+  .list_style > .list-group a {
     height: 60px; }
-    .list_style .list-group a i {
+    .list_style > .list-group a i {
       color: #f4c600; }
-    .list_style .list-group a span {
+    .list_style > .list-group a span {
       font-size: 16px;
       color: #222222;
       padding-left: 10px;
       font-weight: normal;
       background: none;
       line-height: 40px; }
+  .list_style > .list-group .list_detail {
+    margin-bottom: 0;
+    display: none; }
+    .list_style > .list-group .list_detail a {
+      padding-left: 60px;
+      color: #333333; }
 
 .topPic {
   background: #386AE3; }
@@ -153,48 +160,6 @@ a:hover {
   .navbar-default ul li {
     font-size: 14px;
     padding: 0 12px; }
-
-#myModal .modal-content {
-  width: 560px;
-  height: 400px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto; }
-#myModal .modal-header {
-  height: 80px; }
-#myModal .modal-title {
-  line-height: 80px;
-  font-size: 24px; }
-#myModal .modal-body .form-group {
-  padding-left: 16px;
-  margin-bottom: 0; }
-  #myModal .modal-body .form-group span {
-    margin-top: 0; }
-  #myModal .modal-body .form-group input {
-    display: inline-block;
-    height: 40px;
-    width: 375px;
-    margin: 0 0 32px 32px; }
-    #myModal .modal-body .form-group input[type=password] {
-      margin-left: 36px; }
-    #myModal .modal-body .form-group input[type=submit] {
-      margin-left: 60px; }
-  #myModal .modal-body .form-group:nth-child(3) input {
-    width: 150px;
-    margin-left: 28px; }
-  #myModal .modal-body .form-group:nth-child(3) img {
-    height: 40px;
-    width: auto;
-    margin: -32px 0 0 24px; }
-  #myModal .modal-body .form-group:nth-child(3) a {
-    font-size: 24px;
-    vertical-align: top;
-    display: inline-block;
-    height: 40px;
-    padding: 12px; }
 
 .footer {
   background: #CACAD4;
@@ -229,8 +194,8 @@ a:hover {
   height: 100%;
   width: 100%; }
 .login_wrap .modal-content {
-  width: 740px;
-  height: 532px;
+  width: 560px;
+  height: 400px;
   position: absolute;
   left: 0;
   top: 0;
@@ -238,29 +203,30 @@ a:hover {
   bottom: 0;
   margin: auto; }
 .login_wrap .modal-header {
-  height: 120px;
+  height: 80px;
   border-bottom: none; }
   .login_wrap .modal-header .modal-title {
     text-align: center;
-    font-size: 30px;
-    line-height: 120px;
+    line-height: 80px;
+    font-size: 20px;
     letter-spacing: 10px; }
 .login_wrap .modal-body .form-group {
-  padding-left: 68px; }
+  padding-left: 16px;
+  margin-bottom: 0; }
   .login_wrap .modal-body .form-group span {
     color: #29a0df;
-    float: left;
-    margin-top: 8px; }
+    float: left; }
   .login_wrap .modal-body .form-group input {
-    height: 52px;
-    width: 475px;
-    margin: 0 0 42px 50px;
+    height: 40px;
+    width: 375px;
+    margin: 0 0 32px 32px;
     background: #e5f7ff;
-    font-size: 18px; }
+    display: inline-block;
+    font-size: 15px; }
     .login_wrap .modal-body .form-group input[type=password] {
-      margin-left: 54px; }
+      margin-left: 36px; }
     .login_wrap .modal-body .form-group input[type=submit] {
-      margin-left: 80px;
+      margin-left: 60px;
       background: #4accf2;
       -webkit-border-radius: 22px;
       border-radius: 22px;
@@ -268,19 +234,21 @@ a:hover {
       letter-spacing: 20px;
       font-size: 20px; }
   .login_wrap .modal-body .form-group:nth-child(3) input {
-    width: 205px;
-    margin-left: 45px; }
+    width: 150px;
+    margin-left: 28px; }
   .login_wrap .modal-body .form-group:nth-child(3) img {
-    margin: -42px 0 0 37px;
+    height: 40px;
+    width: auto;
+    margin: -32px 0 0 24px;
     border: 1px solid #000000; }
   .login_wrap .modal-body .form-group:nth-child(3) a {
-    font-size: 24px;
+    font-size: 15px;
     vertical-align: top;
     display: inline-block;
-    height: 50px;
+    height: 40px;
+    padding: 12px;
     border-bottom: 1px solid black;
-    border-bottom-color: #00BFFF;
-    padding: 12px; }
+    border-bottom-color: #00BFFF; }
     .login_wrap .modal-body .form-group:nth-child(3) a:hover {
       text-decoration: none; }
 
@@ -419,13 +387,13 @@ a:hover {
     padding: 0 15px 100px 15px; }
     .communication_main .comment_list li {
       border-bottom: 2px solid #888888;
-      position: relative; }
-      .communication_main .comment_list li img {
-        position: absolute;
-        margin: 20px 15px 0 5px; }
+      position: relative;
+      background: url(../images/indexImg/images/person_image.png) no-repeat 20px 15px; }
+      .communication_main .comment_list li:nth-child(even) {
+        background: url(../images/indexImg/images/person_image2.png) no-repeat 20px 15px; }
       .communication_main .comment_list li .comment_content {
         padding: 0 20px 30px 0;
-        margin-left: 100px; }
+        margin-left: 108px; }
         .communication_main .comment_list li .comment_content h3 {
           padding-top: 28px;
           font-size: 20px; }

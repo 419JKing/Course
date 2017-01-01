@@ -100,9 +100,10 @@ a:hover{
 
 //list_style的样式
 .list_style{
-    .list-group{
+    &>.list-group{
         margin: 0 20px;
-        height: 472px;
+        height: 640px;
+        background: #ffffff;
         a{
             height:60px;
             i{
@@ -116,6 +117,14 @@ a:hover{
                 background: none;
                 line-height: 40px;
             }     
+        }
+        .list_detail{
+            margin-bottom: 0;
+            display: none;
+            a{
+                padding-left: 60px;
+                color: #333333;
+            }
         }
     }
 }
