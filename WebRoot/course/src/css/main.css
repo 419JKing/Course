@@ -381,7 +381,7 @@ a:hover {
     height: 162px;
     position: fixed;
     top: 50%;
-    margin-top: -80px;
+    margin-top: -100px;
     left: 48px;
     background: #FCFAFA;
     -webkit-border-radius: 8px;
@@ -456,6 +456,29 @@ a:hover {
         bottom: 15px;
         right: 15px;
         font-size: 14px; }
+
+.practiceTeaching_virtualTeach {
+  height: 1000px;
+  padding: 0 40px; }
+  .practiceTeaching_virtualTeach .left_list {
+    width: 15%;
+    float: left;
+    height: 100%;
+    background: #b7d5f4; }
+    .practiceTeaching_virtualTeach .left_list a {
+      height: 60px;
+      display: block;
+      line-height: 60px;
+      text-align: center;
+      font-size: 16px; }
+      .practiceTeaching_virtualTeach .left_list a:hover {
+        text-decoration: none;
+        background: #86c2fd; }
+  .practiceTeaching_virtualTeach .right_main {
+    background: #ffffff;
+    width: 85%;
+    height: 100%;
+    margin-left: 15%; }
 
 .courseAll .course_head {
   position: relative; }
